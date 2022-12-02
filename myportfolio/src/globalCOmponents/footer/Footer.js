@@ -54,7 +54,7 @@ const Footer = () => {
 				</li>
 				<li className="scale-75 hover:scale-100">
 					<a
-						href="https://www.facebook.com/imehsan.s?mibextid=ZbWKwL"
+						href=" https://stackoverflow.com/users/9044450/ehsan-ullah"
 						className="text-dark hover:text-primary"
 					>
 						<FaStackOverflow />

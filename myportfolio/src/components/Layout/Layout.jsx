@@ -3,11 +3,13 @@ import Footer from '../../globalCOmponents/footer/Footer'
 import Header from '../../globalCOmponents/header/Header'
 const Layout = () => {
 	return (
-		<>
+		<div className="text-dark">
 			<Header />
-			<Outlet />
+			<div className="py-16">
+				<Outlet />
+			</div>
 			<Footer />
-		</>
+		</div>
 	)
 }
 
