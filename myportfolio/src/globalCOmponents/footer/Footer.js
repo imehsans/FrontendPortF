@@ -4,6 +4,7 @@ import {
 	FaGithubSquare,
 	FaInstagramSquare,
 	FaLinkedin,
+	FaStackOverflow,
 	FaTwitterSquare,
 } from 'react-icons/fa'
 
@@ -49,6 +50,14 @@ const Footer = () => {
 						className="text-dark hover:text-primary"
 					>
 						<FaFacebookSquare />
+					</a>
+				</li>
+				<li className="scale-75 hover:scale-100">
+					<a
+						href="https://www.facebook.com/imehsan.s?mibextid=ZbWKwL"
+						className="text-dark hover:text-primary"
+					>
+						<FaStackOverflow />
 					</a>
 				</li>
 			</ul>

@@ -9,6 +9,7 @@ module.exports = {
 			display: ['Oswald'],
 			body: ['"Open Sans"'],
 			rubik: ['Rubik Distressed', 'cursive'],
+			anton: ['Anton'],
 		},
 		extend: {
 			colors: {
