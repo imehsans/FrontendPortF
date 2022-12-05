@@ -2,13 +2,13 @@
 	display: block;
 }
 
-.navicon {
+.navIcon {
 	width: 1.125em;
 	height: 0.125em;
 }
 
-.navicon::before,
-.navicon::after {
+.navIcon::before,
+.navIcon::after {
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -18,11 +18,11 @@
 	background: #ffff;
 }
 
-.navicon::before {
+.navIcon::before {
 	top: 5px;
 }
 
-.navicon::after {
+.navIcon::after {
 	top: -5px;
 }
 
@@ -34,19 +34,19 @@
 	display: block;
 }
 
-.menu-btn:checked ~ .menu-icon .navicon {
+.menu-btn:checked ~ .menu-icon .navIcon {
 	background: transparent;
 }
 
-.menu-btn:checked ~ .menu-icon .navicon::before {
+.menu-btn:checked ~ .menu-icon .navIcon::before {
 	transform: rotate(-45deg);
 }
 
-.menu-btn:checked ~ .menu-icon .navicon::after {
+.menu-btn:checked ~ .menu-icon .navIcon::after {
 	transform: rotate(45deg);
 }
 
-.menu-btn:checked ~ .menu-icon .navicon::before,
-.menu-btn:checked ~ .menu-icon .navicon::after {
+.menu-btn:checked ~ .menu-icon .navIcon::before,
+.menu-btn:checked ~ .menu-icon .navIcon::after {
 	top: 0;
 }

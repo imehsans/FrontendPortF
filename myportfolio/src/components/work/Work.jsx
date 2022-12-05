@@ -4,7 +4,7 @@ const Work = () => {
 	var jobs = [
 		{
 			title: 'Frontend Developer1',
-			'comapny-name': 'ABC',
+			'company-name': 'ABC',
 			'joining-date': '1/1/2022',
 			'ends-Date': '1/1/2022',
 			address: {
@@ -19,7 +19,7 @@ const Work = () => {
 		},
 		{
 			title: 'Frontend Developer2',
-			'comapny-name': 'ABC',
+			'company-name': 'ABC',
 			'joining-date': '1/1/2022',
 			'ends-Date': '1/1/2022',
 			address: {
@@ -52,7 +52,7 @@ const Work = () => {
 										<h1 className="text-[24px] font-normal">{job.title}</h1>
 										<div className="flex mb-4 items-center gap-x-3 text-[20px]">
 											<span className="italic font-semibold text-secondary">
-												{job['comapny-name']}
+												{job['company-name']}
 											</span>
 											<span className="text-light">
 												[{job['joining-date']} - {job['ends-Date']} ]

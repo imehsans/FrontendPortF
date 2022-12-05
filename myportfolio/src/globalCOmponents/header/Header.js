@@ -85,7 +85,7 @@ const Header = () => {
 						>
 							<span
 								onClick={handleToggle}
-								class="navicon  bg-white-darkest text-black flex items-center relative"
+								class=" navIcon  bg-white-darkest text-black flex items-center relative"
 							></span>
 						</label>
 					</div>
