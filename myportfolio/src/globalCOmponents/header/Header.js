@@ -12,50 +12,50 @@ const Header = () => {
 	return (
 		<header>
 			<div className="px-4 py-2 font-bold text-light bg-dark">
-				<div className="container flex items-center justify-between mx-auto">
-					<Link to="/">
+				<div className="container flex flex-wrap justify-between mx-auto">
+					<Link className="order-1" to="/">
 						<h1 className="font-rubik font-light text-[40px] text-primary">
-							Ehsan
+							JS-Dev
 						</h1>
 					</Link>
 					<div
 						className={
 							toggleMenu
-								? 'md:flex  md:pt-0 pt-10 w-full md:w-auto'
-								: 'hidden md:flex'
+								? 'md:flex md:pt-0 order-3 pt-2 w-full md:w-auto'
+								: 'hidden md:flex order-3'
 						}
 						id="menu"
 					>
-						<div className="justify-between flex text-[24px] flex-col md:flex-row align-center">
+						<div className="justify-between md:items-center flex text-[24px] flex-col md:flex-row gap-x-5 align-center">
 							<Link
-								className="px-4 py-2 border-b cursor-pointer md:inline-block hover:text-primary active:text-primary md:border-none"
+								className="px-4 py-2 border-b cursor-pointer md:px-0 md:py-0 md:inline-block hover:text-primary active:text-primary md:border-none"
 								to="/work"
 							>
 								Work
 							</Link>
 							<Link
-								className="px-3 py-2 border-b cursor-pointer md:inline-block hover:text-primary active:text-primary md:border-none"
+								className="px-4 py-2 border-b cursor-pointer md:px-0 md:py-0 md:inline-block hover:text-primary active:text-primary md:border-none"
 								to="/blogs"
 							>
 								Blog
 							</Link>
 							<Link
-								className="px-3 py-2 font-normal border-b cursor-pointer md:inline-block text-secondary hover:text-primary active:text-primary md:border-none"
+								className="px-4 py-2 font-normal border-b cursor-pointer md:px-0 md:py-0 md:inline-block text-secondary hover:text-primary active:text-primary md:border-none"
 								to="/contact"
 							>
 								Contact!
 							</Link>
 						</div>
 					</div>
-					<div className="cursor-pointer md:hidden">
-						<input class="menu-btn hidden" type="checkbox" id="menu-btn" />
+					<div className="order-2 mt-3 cursor-pointer md:hidden">
+						<input class="menu-btn  hidden" type="checkbox" id="menu-btn" />
 						<label
 							class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none"
 							for="menu-btn"
 						>
 							<span
 								onClick={handleToggle}
-								class="navicon bg-white-darkest text-black flex items-center relative"
+								class="navicon  bg-white-darkest text-black flex items-center relative"
 							></span>
 						</label>
 					</div>
