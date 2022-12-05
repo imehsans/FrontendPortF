@@ -53,12 +53,21 @@ const Header = () => {
 								to="/skills"
 								onClick={() => setTab('skills')}
 							>
-								<span className={tab === 'skills' ? 'text-primary' : ''}>
+								<span className={tab === 'skills' ? 'text-primary' : ' '}>
 									Skills
 								</span>
 							</Link>
 							<Link
-								className="px-4 py-2 font-normal border-b cursor-pointer md:px-0 md:py-0 md:inline-block text-secondary hover:text-primary active:text-primary md:border-none"
+								className="px-4 py-2 border-b cursor-pointer md:px-0 md:py-0 md:inline-block hover:text-primary md:border-none"
+								to="/projects"
+								onClick={() => setTab('projects')}
+							>
+								<span className={tab === 'projects' ? 'text-primary' : ''}>
+									Projects
+								</span>
+							</Link>
+							<Link
+								className="px-4 py-2 font-normal border-b cursor-pointer md:px-0 md:py-0 md:inline-block text-secondary hover:text-primary md:border-none"
 								to="/contact"
 								onClick={() => setTab('contacts')}
 							>

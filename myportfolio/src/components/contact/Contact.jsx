@@ -11,13 +11,20 @@ const Contact = () => {
 			</div>
 			<div className="flex flex-col justify-around gap-y-4 gap-x-4 md:flex-row">
 				<div className="flex flex-col justify-around w-full text-center gap-y-6 md:text-start md:w-1/3">
-					<p>
-						<h1 className="mb-4 text-[30px] text-primary font-semibold">
+					<div className="text-justify sm:text-start">
+						<h1 className="text-[30px] text-primary font-semibold">
 							Get In touch
 						</h1>
-						Let’s make somthing new, different and more meaningful or make thing
-						more visual or conceptual? Just say hello!
-					</p>
+						<p>
+							The first objective will be to understand your needs, Then
+							together develop a plan for your backyard and provide you with
+							pricing with new pool!
+						</p>
+						<p>
+							Let’s talk about your website or Project. Send me a message and we
+							will be in touch with in one business day.
+						</p>
+					</div>
 					<div className="flex flex-col gap-y-3">
 						<div className="flex items-center gap-x-4">
 							<span className="text-[20px] text-primary">
