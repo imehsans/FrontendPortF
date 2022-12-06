@@ -105,18 +105,18 @@ const Skills = () => {
 				Personal Skills
 			</h1>
 			<div>
-				<div className="flex">
-					<h1 className="font-semibold py-4 text-[18px] md:text-[20px] text-dark text-start">
-						All Skills
+				<div className="flex pb-1 mb-2 border-b border-dark">
+					<h1 className="hover:cursor-pointer font-semibold  text-[18px] md:text-[20px] text-dark mr-1 border border-b-0 rounded-t px-3 py-2 bg-white  hover:border-primary hover:text-primary text-start ">
+						<span className="">All Skills</span>
 					</h1>
-					<h1 className="font-semibold py-4 text-[18px] md:text-[20px] text-dark text-start">
-						All Skills
+					<h1 className="font-semibold  text-[18px] md:text-[20px] text-dark text-start">
+						<span className="px-3 py-2 ">All Skills</span>
 					</h1>
-					<h1 className="font-semibold py-4 text-[18px] md:text-[20px] text-dark text-start">
-						All Skills
+					<h1 className="font-semibold text-[18px] md:text-[20px] text-dark text-start">
+						<span className="px-3 py-2 ">All Skills</span>
 					</h1>
-					<h1 className="font-semibold py-4 text-[18px] md:text-[20px] text-dark text-start">
-						All Skills
+					<h1 className="font-semibold text-[18px] md:text-[20px] text-dark text-start">
+						<span className="px-3 py-2 ">All Skills</span>
 					</h1>
 				</div>
 				<div className="text-start">
@@ -125,7 +125,7 @@ const Skills = () => {
 							<ul className="flex flex-wrap">
 								{skill.programming.map((item) => {
 									return (
-										<li className="px-3 py-4 text-center transition ease-in-out delay-300 scale-90 border hover:delay-150 hover:scale-100 border-secondary">
+										<li className="px-3 py-4 text-center transition ease-in-out delay-300 scale-90 border hover:delay-150 hover:scale-100 border-secondary hover:border-primary">
 											<div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-light bg-opacity-10">
 												<img className="w-28" src={item.img} alt={item.title} />
 											</div>
