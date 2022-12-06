@@ -93,7 +93,7 @@ const Skills = () => {
 				{
 					img: '',
 					title: 'HTML',
-					command: '900',
+					command: '90',
 				},
 			],
 		},
