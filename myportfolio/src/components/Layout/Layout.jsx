@@ -5,9 +5,7 @@ const Layout = () => {
 	return (
 		<div className="text-dark">
 			<Header />
-			<div className="py-8 md:py-16">
-				<Outlet />
-			</div>
+			<Outlet />
 			<Footer />
 		</div>
 	)

@@ -3,7 +3,7 @@ import TypeWriterEffect from 'react-typewriter-effect'
 
 const Introduction = () => {
 	return (
-		<div className="container flex flex-col items-center justify-around px-4 mx-auto mb-14 md:flex-row md:px-0">
+		<div className="container flex flex-col items-center justify-around px-4 py-8 mx-auto md:py-16 mb-14 md:flex-row md:px-0">
 			<div className="order-2 w-full md:w-1/2 md:order-1">
 				<div className="text-[35px] md:text-[40px] lg:text-[50px] leading-tight font-anton text-dark mb-5 ">
 					<h1>
