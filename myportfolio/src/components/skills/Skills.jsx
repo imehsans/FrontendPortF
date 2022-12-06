@@ -116,7 +116,7 @@ const Skills = () => {
 									return (
 										<li className="px-3 py-4 text-center transition ease-in-out delay-300 scale-90 border hover:delay-150 hover:scale-100 border-secondary hover:border-primary">
 											<div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-light bg-opacity-10">
-												<img className="w-28" src={item.img} alt={item.title} />
+												<img className="w-20" src={item.img} alt={item.title} />
 											</div>
 											<h1 className="font-semibold">{item.title}</h1>
 											<p className="">Command {item.command}</p>
