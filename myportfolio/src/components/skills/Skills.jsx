@@ -105,20 +105,9 @@ const Skills = () => {
 				Personal Skills
 			</h1>
 			<div>
-				<div className="flex pb-1 mb-2 border-b border-dark">
-					<h1 className="hover:cursor-pointer font-semibold  text-[18px] md:text-[20px] text-dark mr-1 border border-b-0 rounded-t px-3 py-2 bg-white  hover:border-primary hover:text-primary text-start ">
-						<span className="">All Skills</span>
-					</h1>
-					<h1 className="font-semibold  text-[18px] md:text-[20px] text-dark text-start">
-						<span className="px-3 py-2 ">All Skills</span>
-					</h1>
-					<h1 className="font-semibold text-[18px] md:text-[20px] text-dark text-start">
-						<span className="px-3 py-2 ">All Skills</span>
-					</h1>
-					<h1 className="font-semibold text-[18px] md:text-[20px] text-dark text-start">
-						<span className="px-3 py-2 ">All Skills</span>
-					</h1>
-				</div>
+				<h1 className="font-semibold text-[20px] md:text-[24px] text-dark hover:text-primary text-start ">
+					<span className="">All Skills</span>
+				</h1>
 				<div className="text-start">
 					{skills.map((skill) => {
 						return (
