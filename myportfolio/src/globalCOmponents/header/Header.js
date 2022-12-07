@@ -78,14 +78,14 @@ const Header = () => {
 						</div>
 					</div>
 					<div className="order-2 mt-3 cursor-pointer md:hidden">
-						<input class="menu-btn  hidden" type="checkbox" id="menu-btn" />
+						<input className="hidden menu-btn" type="checkbox" id="menu-btn" />
 						<label
-							class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none"
-							for="menu-btn"
+							className="relative block px-2 py-4 cursor-pointer select-none menu-icon md:hidden"
+							htmlFor="menu-btn"
 						>
 							<span
 								onClick={handleToggle}
-								class=" navIcon  bg-white-darkest text-black flex items-center relative"
+								className="relative flex items-center text-black navIcon bg-white-darkest"
 							></span>
 						</label>
 					</div>

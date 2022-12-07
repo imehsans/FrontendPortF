@@ -100,7 +100,7 @@ const Skills = () => {
 	]
 
 	return (
-		<div className="container py-8 mx-auto text-center md:py-16">
+		<div className="container px-4 py-8 mx-auto text-center md:px-0 md:py-16">
 			<h1 className="font-anton py-2 text-[24px] md:text-[35px] text-dark">
 				Personal Skills
 			</h1>
@@ -111,18 +111,22 @@ const Skills = () => {
 				<div className="text-start">
 					{skills.map((skill) => {
 						return (
-							<ul className="flex flex-wrap">
+							<ul className="flex flex-wrap justify-center gap-2">
 								{skill.programming.map((item) => {
 									return (
 										<li className="px-3 py-4 text-center transition ease-in-out delay-300 scale-90 border hover:delay-150 hover:scale-100 border-secondary hover:border-primary">
 											<div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-light bg-opacity-10">
-												<img className="w-20" src={item.img} alt={item.title} />
+												<img
+													className="w-20 scale-100 hover:scale-110"
+													src={item.img}
+													alt={item.title}
+												/>
 											</div>
 											<h1 className="font-semibold">{item.title}</h1>
 											<p className="">Command {item.command}</p>
-											<div class="h-2 overflow-hidden bg-gray-200 rounded-full dark:bg-gray-700">
+											<div className="h-2 overflow-hidden bg-gray-200 rounded-full dark:bg-gray-700">
 												<div
-													class="h-2 bg-primary rounded-full"
+													className="h-2 rounded-full bg-primary"
 													style={{ width: item.command }}
 												></div>
 											</div>
