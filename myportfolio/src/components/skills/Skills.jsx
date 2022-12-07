@@ -101,23 +101,23 @@ const Skills = () => {
 
 	return (
 		<div className="container px-4 py-8 mx-auto text-center md:px-0 md:py-16">
-			<h1 className="font-anton py-2 text-[24px] md:text-[35px] text-dark">
+			<h1 className="font-anton py-2 mb-5 text-[24px] md:text-[35px] text-dark">
 				Personal Skills
 			</h1>
 			<div>
 				<h1 className="font-semibold text-[20px] md:text-[24px] text-dark hover:text-primary text-start ">
-					<span className="">All Skills</span>
+					<span className="mb-10"></span>
 				</h1>
 				<div className="text-start">
 					{skills.map((skill) => {
 						return (
-							<ul className="flex flex-wrap justify-center gap-2">
+							<ul className="flex flex-wrap justify-center gap-10">
 								{skill.programming.map((item) => {
 									return (
-										<li className="px-3 py-4 text-center transition ease-in-out delay-300 scale-90 border hover:delay-150 hover:scale-100 border-secondary hover:border-primary">
-											<div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-light bg-opacity-10">
+										<li className="px-3 py-4 text-center transition ease-in-out delay-300 scale-100 border hover:scale-125 border-secondary hover:border-primary bg-light bg-opacity-10 hover:bg-white hover:text-dark">
+											<div className="flex items-center justify-center w-32 h-32 overflow-hidden border rounded-full border-primary ">
 												<img
-													className="w-20 scale-100 hover:scale-110"
+													className="w-20 ease-in-out delay-300 scale-100 hover:scale-105"
 													src={item.img}
 													alt={item.title}
 												/>

@@ -9,6 +9,33 @@ const Header = () => {
 		setToggleMenu(!toggleMenu)
 	}
 
+	var data = [
+		{
+			title: 'Blogs',
+			tab: 'blog',
+			link: '/blogs',
+		},
+		{
+			title: 'Skills',
+			tab: 'skill',
+			link: '/skills',
+		},
+		{
+			title: 'Projects',
+			tab: 'project',
+			link: '/projects',
+		},
+		{
+			title: 'About me',
+			tab: 'work',
+			link: '/work',
+		},
+		{
+			title: 'Contact!',
+			tab: 'contact',
+			link: '/contact',
+		},
+	]
 	return (
 		<header>
 			<div className="px-4 py-2 font-bold text-light bg-dark">
@@ -29,52 +56,20 @@ const Header = () => {
 						}
 						id="menu"
 					>
-						<div className="justify-between md:items-center flex text-[24px] flex-col md:flex-row gap-x-8 align-center">
-							<Link
-								className="px-4 py-2 border-b cursor-pointer md:px-0 md:py-0 md:inline-block hover:text-primary active:text-primary md:border-none"
-								to="/work"
-								onClick={() => setTab('work')}
-							>
-								<span className={tab === 'work' ? 'text-primary' : ''}>
-									Work Experience
-								</span>
-							</Link>
-							<Link
-								className="px-4 py-2 border-b cursor-pointer md:px-0 md:py-0 md:inline-block hover:text-primary active:text-primary md:border-none"
-								to="/blogs"
-								onClick={() => setTab('blog')}
-							>
-								<span className={tab === 'blog' ? 'text-primary' : ''}>
-									Blogs
-								</span>
-							</Link>
-							<Link
-								className="px-4 py-2 border-b cursor-pointer md:px-0 md:py-0 md:inline-block hover:text-primary active:text-primary md:border-none"
-								to="/skills"
-								onClick={() => setTab('skills')}
-							>
-								<span className={tab === 'skills' ? 'text-primary' : ' '}>
-									Skills
-								</span>
-							</Link>
-							<Link
-								className="px-4 py-2 border-b cursor-pointer md:px-0 md:py-0 md:inline-block hover:text-primary md:border-none"
-								to="/projects"
-								onClick={() => setTab('projects')}
-							>
-								<span className={tab === 'projects' ? 'text-primary' : ''}>
-									Projects
-								</span>
-							</Link>
-							<Link
-								className="px-4 py-2 font-normal border-b cursor-pointer md:px-0 md:py-0 md:inline-block text-secondary hover:text-primary md:border-none"
-								to="/contact"
-								onClick={() => setTab('contacts')}
-							>
-								<span className={tab === 'contacts' ? 'text-primary' : ''}>
-									Contact!
-								</span>
-							</Link>
+						<div className="justify-between md:items-center flex text-[24px] font-normal flex-col md:flex-row gap-x-8 align-center">
+							{data.map((item) => {
+								return (
+									<Link
+										className="px-4 py-2 border-b cursor-pointer md:px-0 md:py-0 md:inline-block hover:text-primary active:text-primary md:border-none"
+										to={item?.link}
+										onClick={() => setTab(item?.tab)}
+									>
+										<span className={tab === item?.tab ? 'text-primary ' : ''}>
+											{item?.title}
+										</span>
+									</Link>
+								)
+							})}
 						</div>
 					</div>
 					<div className="order-2 mt-3 cursor-pointer md:hidden">

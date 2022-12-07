@@ -42,8 +42,8 @@ const Footer = () => {
 				{data?.map((item) => {
 					return (
 						<li
-							key={item?.id}
 							className="duration-300 ease-in-out scale-75 hover:scale-100"
+							key={item.id}
 						>
 							<a href={item?.link} className="text-dark hover:text-primary">
 								{item?.icon}
