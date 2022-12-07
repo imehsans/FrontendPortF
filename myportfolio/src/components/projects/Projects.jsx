@@ -6,57 +6,81 @@ const Projects = () => {
 			name: 'SafetyConnect',
 			img3: '',
 			link: 'https://inspectionweb-react-ehsan.netlify.app/',
-			detail: '',
+			developedIn: ['HTML', 'CSS', 'Tailwind', 'JavaScript', 'ReactJs'],
+			detail:
+				'It was developed for a company as ReactJs developer Task, Its fully Responsive for each screen and according to the given design',
 		},
 		{
 			name: 'Cable-Co Dashboard',
 			img3: '',
 			link: 'https://cableco-dashboard-by-ehsan.netlify.app/',
-			detail: '',
+			developedIn: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'JQuery'],
+			detail:
+				'Its develop for practice purpose site from design with fully Responsive for each screen and according to the given design every function worked according the demo site',
 		},
 		{
 			name: 'SSL-Checker ToolKit',
 			img3: '',
 			link: 'https://toolkit-tailwind-by-ehsan.netlify.app/src/',
-			detail: '',
+			developedIn: ['HTML', 'CSS', 'Tailwind', 'JavaScript'],
+			detail:
+				'This site is developed for the purpose of practice on TailwindCSS and JavaScript from demo site with fully Responsive for each screen',
 		},
 		{
 			name: 'SCTE Site',
 			img3: '',
 			link: 'https://scte-site-by-ehsan.netlify.app/',
-			detail: '',
+			developedIn: ['HTML', 'CSS', 'Bootstrap'],
+			detail:
+				'This site is developed for the purpose of practice on Bootstrap from demo site with fully Responsive for each screen',
 		},
 		{
 			name: 'Apeam Site',
 			img3: '',
 			link: 'https://apem-site-by-ehsanullah.netlify.app/',
-			detail: '',
+			developedIn: ['HTML', 'CSS'],
+			detail:
+				'First practice site from design with fully Responsive for each screen',
 		},
 	]
 
 	return (
-		<div className="container py-8 mx-auto">
+		<div className="container pt-8 mx-auto mb-8">
 			<h1 className="font-anton text-center py-4 text-[24px] md:text-[30px] text-primary">
 				Projects
 			</h1>
-			<ul className="flex flex-wrap overflow-hidden gap-y-4">
+			<ul className="flex flex-wrap p-8 overflow-hidden gap-y-4">
 				{Projects?.map((project) => {
 					return (
-						<li
-							className="w-1/3 px-3 py-4 duration-300 ease-in-out scale-95 shadow-2xl cursor-pointer hover:bg-opacity-20 h-80 hover:scale-90 bg-dark hover:bg-gradient-to-r hover cursor pointer hover:from-secondary hover:to-primary"
-							key={project.key}
-						>
-							<a
-								href={project.link}
-								target="_blank"
-								className="flex items-center justify-center w-full h-full opacity-0 hover:opacity-100 "
-								rel="noreferrer"
+						<div className="w-full mx-auto scale-90 md:mx-0 md:w-1/2 lg:w-1/3 h-96 rounded-2xl bg-primary">
+							<li
+								className="w-full h-full px-3 py-4 duration-300 ease-in-out scale-105 shadow-2xl cursor-pointer md:mt-3 md:ml-3 lg:mt-5 lg:ml-5 ms-4 hover:bg-opacity-20 hover:scale-100 bg-dark hover:bg-gradient-to-r hover cursor pointer hover:from-secondary hover:to-primary rounded-2xl"
+								key={project.key}
 							>
-								<h1 className="text-[35px] font-anton text-white">
-									{project?.name}
-								</h1>
-							</a>
-						</li>
+								<a
+									href={project.link}
+									target="_blank"
+									className="flex flex-col items-center justify-center w-full h-full opacity-20 hover:opacity-100 "
+									rel="noreferrer"
+								>
+									<h1 className="text-[35px] opacity-100 font-anton text-white">
+										{project?.name}
+									</h1>
+									<p className="w-3/4 my-3 text-center text-white">
+										{project.detail}
+									</p>
+									<ul class="flex gap-4 flex-wrap justify-center">
+										{project.developedIn.map((item) => {
+											return (
+												<li className="px-2 py-1 text-white bg-transparent border border-white rounded cursor-pointer hover:bg-primary hover:border-primary">
+													<span>{item}</span>
+												</li>
+											)
+										})}
+									</ul>
+								</a>
+							</li>
+						</div>
 					)
 				})}
 			</ul>

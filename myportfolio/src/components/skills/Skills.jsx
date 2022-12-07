@@ -100,7 +100,7 @@ const Skills = () => {
 	]
 
 	return (
-		<div className="container px-4 py-8 mx-auto text-center md:px-0 md:py-16">
+		<div className="container px-4 pt-8 mx-auto text-center md:px-0 md:pt-16">
 			<h1 className="font-anton py-2 mb-5 text-[24px] md:text-[35px] text-dark">
 				Personal Skills
 			</h1>

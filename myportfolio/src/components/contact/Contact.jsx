@@ -3,7 +3,7 @@ import { FaEnvelope, FaLocationArrow, FaPhone } from 'react-icons/fa'
 
 const Contact = () => {
 	return (
-		<div className="container px-4 py-8 mx-auto md:py-16 text-dark md:px-0">
+		<div className="container px-4 pt-8 mx-auto md:pt-16 text-dark md:px-0">
 			<div className="text-center">
 				<h1 className="font-anton py-4 text-[24px] md:text-[30px] text-dark">
 					Hire Me for Your Next Amazing Project!

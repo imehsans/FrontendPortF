@@ -115,16 +115,16 @@ const workExp = () => {
 
 	return (
 		<>
-			<h1 className="font-anton py-4 text-[24px] md:text-[30px] text-primary">
+			<h1 className="font-anton pt-8 text-[24px] md:text-[30px] text-primary">
 				Work Experience
 			</h1>
-			<ul className="flex flex-col flex-wrap justify-between md:flex-row">
+			<ul className="flex flex-col justify-between overflow-auto flex-nowrap md:flex-row">
 				{jobs.map((job) => {
 					return (
 						<>
 							{job ? (
 								<li
-									className="w-full px-2 py-3 text-left scale-95 bg-white shadow-xl hover:scale-100 max-auto md:w-1/2 rounded-xl md:px-4"
+									className="min-w-[50%] px-2 py-3 text-left scale-90 bg-white shadow-xl hover:scale-100 max-auto md:min-w-96 rounded-xl md:px-4 hover:bg-dark hover:text-white"
 									key={job?.id}
 								>
 									<div className="p-3">
