@@ -2,12 +2,12 @@ import React from 'react'
 
 const AboutMe = () => {
 	return (
-		<div className="flex items-center justify-around px-4 pt-8 md:pt-16 md:bg-primary">
-			<div className="w-3/4 text-center lg:w-1/4 md:w-1/2">
-				<h1 className="font-anton text-primary mb-3 text-center md:text-start pt-4 text-[24px] md:text-[30px] md:text-dark">
+		<div className="flex items-center justify-around px-4 pt-8 md:pt-16 md:bg-gradient-to-r from-light via-primary to-secondary">
+			<div className="w-3/4 mx-auto md:w-1/2">
+				<h1 className="font-anton md:float-right text-primary mb-3 text-center md:text-end pt-4 text-[24px] md:w-3/4 md:text-[30px] md:text-dark">
 					About me
 				</h1>
-				<p className="w-full pb-16 text-center text-dark md:text-start md:w-10/12 lg:w-3/4 xl:w-full">
+				<p className="w-full text-center md:float-right md:pb-8 lg:mb-12 xl:mb-16 md:w-3/4 text-dark md:text-end">
 					Front-End developer with proven experience at TODD's Group, Geeks Hub
 					and Merik Solutions in helping companies create and maintain a better
 					code base for reusability. Capable of continuous learning from senior
