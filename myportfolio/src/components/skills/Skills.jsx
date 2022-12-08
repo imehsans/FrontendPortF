@@ -7,7 +7,7 @@ const Skills = () => {
 				{
 					img: './images/html5.png',
 					title: 'HTML',
-					command: '90%',
+					command: '95%',
 				},
 				{
 					img: './images/CSS3.png',
@@ -17,12 +17,12 @@ const Skills = () => {
 				{
 					img: './images/Bootstrap.png',
 					title: 'Bootstrap',
-					command: '95%',
+					command: '90%',
 				},
 				{
 					img: './images/Tailwind.png',
 					title: 'TailwindCSS',
-					command: '95%',
+					command: '90%',
 				},
 				{
 					img: './images/Sass.png',
@@ -32,32 +32,32 @@ const Skills = () => {
 				{
 					img: './images/javascript.png',
 					title: 'JavaScript',
-					command: '80%',
+					command: '85%',
 				},
 				{
 					img: './images/jquery.png',
 					title: 'JQuery',
-					command: '65%',
+					command: '70%',
 				},
 				{
 					img: './images/Ajax.png',
 					title: 'AJAX',
-					command: '50%',
+					command: '60%',
 				},
 				{
 					img: './images/React.png',
 					title: 'ReactJs',
-					command: '80%',
+					command: '85%',
 				},
 				{
 					img: './images/redux.png',
 					title: 'Redux JS',
-					command: '60%',
+					command: '70%',
 				},
 				{
 					img: './images/git.png',
 					title: 'GIT',
-					command: '70%',
+					command: '80%',
 				},
 				{
 					img: './images/nodejs.png',
@@ -74,26 +74,18 @@ const Skills = () => {
 					title: 'ExpressJs',
 					command: '10%',
 				},
-			],
-			technical: [
 				{
-					img: '',
-					title: 'HTML',
-					command: 90,
+					img: './images/sql.png',
+					title: 'SQL',
+					command: '40%',
 				},
 			],
-			communication: [
+			Note: [
 				{
-					img: '',
-					title: 'HTML',
-					command: '90',
-				},
-			],
-			organizational: [
-				{
-					img: '',
-					title: 'HTML',
-					command: '90',
+					img: './images/skillnote.png',
+					title: 'About Skills',
+					details:
+						'Have an Excellent command HTML, CSS, Bootstrap, Tailwind CSS to implement design, And have command on React JavaScript library using for Front end development, Basic Knowledge of MongoDB , Express and NodeJS, Have Basic command on (SQL)Structure Query Language, Firebase and Oracle database gained by working on different Projects in Bachelor Degree. Working on multiple projects in my Degree courses give me solid command to implement programming languages like C, C++, Java, and Python. Proficient command over version control system Git gained by managing projects progresses using GitHub in different projects. Excellent communication skills (written and verbal) in dealing and communicating with people gained through working with individuals from different backgrounds. Excellent Organizational and leading skills gained by working in different societies in university as a front man.',
 				},
 			],
 		},
@@ -111,29 +103,60 @@ const Skills = () => {
 				<div className="text-start">
 					{skills.map((skill) => {
 						return (
-							<ul className="flex flex-wrap justify-center gap-10">
-								{skill.programming.map((item) => {
+							<>
+								{skill?.Note.map((item) => {
 									return (
-										<li className="px-3 py-4 text-center transition ease-in-out delay-300 scale-100 border hover:scale-125 border-secondary hover:border-primary bg-light bg-opacity-10 hover:bg-white hover:text-dark">
-											<div className="flex items-center justify-center w-32 h-32 overflow-hidden border rounded-full border-primary ">
+										<div
+											className="flex items-center justify-around px-4 py-16 mt-8 md:mt-16 md:pt-16 md:bg-gradient-to-r to-primary rounded-2xl via-secondary from-dark"
+											key={item.id}
+										>
+											<div className="justify-center hidden w-1/2 md:flex">
 												<img
-													className="w-20 ease-in-out delay-300 scale-100 hover:scale-105"
-													src={item.img}
+													className="w-[300px] h-full shadow-2xl shadow-dark hover:scale-125 ease-in-out delay-300 rounded-b-2xl border-primary rounded-xl border-t-0 border-[20px] border-r-0 outline-1"
+													src={item?.img}
 													alt={item.title}
 												/>
 											</div>
-											<h1 className="font-semibold">{item.title}</h1>
-											<p className="">Command {item.command}</p>
-											<div className="h-2 overflow-hidden bg-gray-200 rounded-full dark:bg-gray-700">
-												<div
-													className="h-2 rounded-full bg-primary"
-													style={{ width: item.command }}
-												></div>
+											<div className="w-3/4 mx-auto md:w-1/2">
+												<h1 className="font-anton  text-primary mb-3 text-center md:text-start  text-[24px] md:w-3/4 md:text-[30px] md:text-white">
+													{item.title}
+												</h1>
+												<p className="w-full text-center text-dark md:w-3/4 md:text-white md:text-start">
+													{item.details}
+												</p>
 											</div>
-										</li>
+										</div>
 									)
 								})}
-							</ul>
+
+								<ul className="flex flex-wrap justify-start gap-2 mt-8 md:mt-16 md:gap-10 md:justify-center">
+									{skill.programming.map((item) => {
+										return (
+											<li className="px-3 py-4 text-center transition ease-in-out delay-300 scale-95 border rounded-xl md:scale-100 hover:scale-105 md:hover:scale-125 border-secondary hover:border-primary md:rounded bg-light bg-opacity-10 hover:bg-white hover:text-dark ">
+												<div className="items-center justify-center hidden w-32 h-32 overflow-hidden border rounded-full border-primary md:flex">
+													<img
+														className="w-20 ease-in-out delay-300 scale-100 hover:scale-105"
+														src={item.img}
+														alt={item.title}
+													/>
+												</div>
+												<h1 className="font-semibold text-dark hover:text-primary md:text-secondary">
+													{item.title}
+												</h1>
+												<p className="hidden md:block hover:block">
+													Command {item.command}
+												</p>
+												<div className="h-2 overflow-hidden bg-gray-200 rounded-full dark:bg-gray-700">
+													<div
+														className="h-2 rounded-full bg-primary"
+														style={{ width: item.command }}
+													></div>
+												</div>
+											</li>
+										)
+									})}
+								</ul>
+							</>
 						)
 					})}
 				</div>
