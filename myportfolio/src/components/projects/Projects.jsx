@@ -3,6 +3,22 @@ import React from 'react'
 const Projects = () => {
 	var Projects = [
 		{
+			name: 'Portfolio Site',
+			img3: '',
+			link: 'https://my-portfolio-frontend.netlify.app/',
+			developedIn: ['HTML', 'CSS', 'Tailwind', 'JavaScript', 'ReactJs'],
+			detail:
+				'It was developed for a company as ReactJs developer Task, Its fully Responsive for each screen and according to the given design',
+		},
+		{
+			name: 'Quiz Maker App',
+			img3: '',
+			link: 'https://react-json-quizmaker.netlify.app/',
+			developedIn: ['HTML', 'CSS', 'Tailwind', 'JavaScript', 'ReactJs'],
+			detail:
+				'It was developed for a company as ReactJs developer Task, Its fully Responsive for each screen and according to the given design',
+		},
+		{
 			name: 'SafetyConnect',
 			img3: '',
 			link: 'https://inspectionweb-react-ehsan.netlify.app/',
@@ -54,7 +70,7 @@ const Projects = () => {
 					return (
 						<div className="w-full mx-auto scale-90 md:mx-0 md:w-1/2 lg:w-1/3 h-96 rounded-2xl bg-primary">
 							<li
-								className="w-full h-full px-3 py-4 duration-300 ease-in-out scale-105 shadow-2xl cursor-pointer md:mt-3 md:ml-3 lg:mt-5 lg:ml-5 ms-4 hover:bg-opacity-20 hover:scale-100 bg-dark hover:bg-gradient-to-r hover cursor pointer hover:from-secondary hover:to-primary rounded-2xl"
+								className="w-full h-full px-3 py-4 duration-300 ease-in-out scale-105 shadow-2xl cursor-pointer md:mt-3 md:ml-3 lg:mt-5 lg:ml-5 ms-4 hover:bg-opacity-20 hover:scale-100 bg-dark hover:bg-gradient-to-br hover cursor pointer hover:from-secondary hover:to-primary rounded-2xl"
 								key={project.key}
 							>
 								<a

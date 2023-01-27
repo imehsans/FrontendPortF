@@ -32,12 +32,12 @@ const Skills = () => {
 				{
 					img: './images/javascript.png',
 					title: 'JavaScript',
-					command: '85%',
+					command: '80%',
 				},
 				{
 					img: './images/jquery.png',
 					title: 'JQuery',
-					command: '70%',
+					command: '80%',
 				},
 				{
 					img: './images/Ajax.png',
@@ -47,17 +47,22 @@ const Skills = () => {
 				{
 					img: './images/React.png',
 					title: 'ReactJs',
-					command: '85%',
+					command: '80%',
+				},
+				{
+					img: './images/nextJs.png',
+					title: 'NEXT.js',
+					command: '80%',
 				},
 				{
 					img: './images/redux.png',
 					title: 'Redux JS',
-					command: '70%',
+					command: '80%',
 				},
 				{
 					img: './images/git.png',
 					title: 'GIT',
-					command: '80%',
+					command: '70%',
 				},
 				{
 					img: './images/nodejs.png',
@@ -107,7 +112,7 @@ const Skills = () => {
 								{skill?.Note.map((item) => {
 									return (
 										<div
-											className="flex items-center justify-around px-4 py-16 mt-8 md:mt-16 md:pt-16 md:bg-gradient-to-r to-primary rounded-2xl via-secondary from-dark"
+											className="flex items-center justify-around px-4 py-16 mt-8 md:mt-16 md:pt-16 md:bg-gradient-to-br to-secondary rounded-2xl via-primary from-dark"
 											key={item.id}
 										>
 											<div className="justify-center hidden w-1/2 md:flex">
